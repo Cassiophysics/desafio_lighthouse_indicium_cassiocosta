@@ -12,26 +12,35 @@ O desafio fornece dois conjuntos de dados: "cars_training" para treinamento, com
 ### Etapas
 O desafio é dividido em várias etapas principais:
 
-Análise Exploratória de Dados (EDA): Foi realizada uma análise detalhada dos dados, incluindo a análise das principais estatísticas descritivas das variáveis, visualização gráfica das variáveis e identificação de insights relevantes. Foram respondidas perguntas de negócio e formuladas hipóteses relacionadas à venda de carros em diferentes estados, tipos de veículos e características específicas.
+Análise Exploratória de Dados (EDA): Foi realizada uma análise abrangente dos dados, abordando tanto a análise univariada quanto a multivariada. Isso incluiu a investigação das principais estatísticas descritivas das variáveis, a visualização gráfica dos dados e a identificação de insights relevantes. Além disso, foram respondidas as perguntas de negócio propostas e formuladas novas hipóteses relacionadas à venda de carros.
 
-Modelagem Preditiva: Com base nos dados analisados, foi desenvolvido um modelo preditivo para precificar os carros do cliente. Foram utilizadas técnicas de pré-processamento de dados, seleção de variáveis e construção de um pipeline de modelagem. O modelo escolhido foi o XGBoost, devido à sua capacidade de lidar com dados complexos e fornecer resultados precisos.
+Pré-Processamento: Foram realizadas exclusões de colunas incorretas e irrelevantes para o modelo, bem como a criação de novas colunas com base nas existentes.
+
+Modelagem Preditiva: Com base na análise dos dados, foi desenvolvido um modelo preditivo para precificar os carros. Os algoritmos foram divididos em dois grupos e testados em um loop: o primeiro grupo contendo algoritmos diversos e o segundo grupo contendo algoritmos baseados em árvores. Foi construído um pipeline de modelagem para esse propósito. O modelo escolhido como o mais adequado foi o XGBoost, devido à sua capacidade de lidar com dados complexos e fornecer resultados precisos.
 
 Avaliação do Modelo: O modelo foi avaliado usando métricas adequadas para problemas de regressão, como R-squared, MAE, MSE, RMSE e MAPE. Essas métricas forneceram uma medida do desempenho do modelo em relação aos valores reais de preço dos carros.
 
 Resultados: Os resultados finais do modelo foram apresentados em um arquivo CSV contendo as colunas "id" e "preco", que representa as previsões de preço para os veículos do conjunto de teste.
 
 ### Estrutura do Repositório
-data/: Pasta contendo os conjuntos de dados fornecidos.
-notebooks/: Pasta contendo os notebooks Jupyter utilizados para a análise exploratória dos dados e construção do modelo preditivo.
-reports/: Pasta contendo os relatórios gerados durante a análise exploratória dos dados.
-predicted.csv: Arquivo CSV contendo as previsões de preço para os veículos do conjunto de teste.
-requirements.txt: Arquivo contendo as dependências do projeto e suas respectivas versões.
-Instruções de Uso
+Dados/: Pasta contendo os conjuntos de dados fornecidos e criados durante o processo.
+
+Códigos/: Pasta contendo os notebooks Jupyter utilizados para a análise exploratória dos dados e construção do modelo preditivo.
+
+Modelo/: Pasta contendo o modelo final.
+
+Predicted/: Pasta contendo o Arquivo CSV com as previsões de preço para os veículos do conjunto de teste.
+
+Requirements/: Pasta contendo um Arquivo txt com as dependências do projeto e suas respectivas versões.
+
+Instruções/: Pasta contendo as intruções para esse projeto.
+
+#### Instruções de Uso
 Clone o repositório para sua máquina local.
 
 Certifique-se de ter todas as dependências necessárias instaladas executando o comando **pip install -r requirements.txt**.
 
-Explore os notebooks na pasta notebooks/ para entender o processo de análise exploratória dos dados e construção do modelo.
+Explore os notebooks na pasta Códigos/ para entender o processo de análise exploratória dos dados e construção do modelo.
 
 Execute o código presente nos notebooks ou adapte-o conforme necessário para ajustar ao seu ambiente e dados.
 
