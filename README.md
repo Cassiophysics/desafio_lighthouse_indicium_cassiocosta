@@ -9,6 +9,8 @@ O cliente em questão é uma empresa de compra e venda de veículos usados que e
 ### Dados
 O desafio fornece dois conjuntos de dados: "cars_training" para treinamento, composto por 29 colunas, incluindo a variável alvo "preco", e "cars_test" para teste, sem a coluna "preco". O conjunto de treinamento contém informações descritivas sobre os veículos, como marca, modelo, ano de fabricação, hodômetro, tipo de câmbio, número de portas, entre outras.
 
+**OBS:** O relatório contendo as respostas das 3 hipóteses de negócio propostas pelo desafio, juntamente com as 3 hipóteses elaboradas e respondidas por mim, está disponível no arquivo Jupyter Notebook **1 - EDA_desafio_lighthouse.ipynb**, localizado na pasta "Códigos" do repositório. Nesse arquivo, você encontrará uma análise exploratória detalhada dos dados, as perguntas de negócio respondidas e as respectivas conclusões obtidas.
+
 ### Etapas
 O desafio é dividido em várias etapas principais:
 
